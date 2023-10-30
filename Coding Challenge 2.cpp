@@ -57,66 +57,66 @@ string scrabbleScorer( string text ) //method parsing user input to determine th
 		} //end of first if statement
 		else //first else
 		{
-			if( text[ counter ] == 'A' || text[ counter ] == 'E' || text[ counter ] == 'I' || text[ counter ] == 'L' || text[ counter ] == 'N' || text[ counter ] == 'O' || //(second if)
-			    text[ counter ] == 'R' || text[ counter ] == 'S' || text[ counter ] == 'T' || text[ counter ] == 'U') //checks for letters A,E,I,L,N,O,R,S,T,U and adds 1 to variable 'value' if they are found
-			    {																									 //(second if)
-			    	value +=1 ; //adds 1 to variable 'value'
-			    	counter++; //moves onto next letter if one matching above parameters is found
-				} // end of second if
-				else //second else
-				{
-					if( text[ counter ] == 'D' || text[ counter ] == 'G') // checks for letters D or G, and adds 2 to variable 'value' if they are found (third if)
-					{
-						value += 2; //adds 2 to variable 'value'
-						counter ++; //moves onto next letter if one matching above parameters is found
-					} //end of third if
-					else //third else
-					{																												
-						if ( text[ counter ] == 'B' || text[ counter ] == 'C' || text[ counter ] == 'M' || text[ counter ] == 'P') //checks for letters B,C,M,P and adds 3 to variable 'value' if they are found
-						{																										  //(fourth if)
-							value += 3; //adds 3 to variable 'value'
-							counter++; //moves onto next letter if one matching above parameters is found
-						} //end of fourth if
-						else //fourth else
-						{
-							if ( text[ counter ] == 'F' || text[ counter ] == 'H' || text[ counter ] == 'V' || text[ counter ] == 'W' || text[ counter ] == 'Y') //checks for letters B,C,M,P and adds 4 to variable 'value' if they are found
-							{																																	//(fifth if)
-								value += 4;
-								counter++;
-							} //end of fifth if
-							else //fifth else
-							{
-								if ( text[ counter ] == 'K' ) //checks for the letter K and adds 5 to variable 'value' if found (sixth if)
-								{
-									value += 5; //adds 5 to variable 'value'
-									counter++; //moves onto next letter if the one matching the above parameters is found
-								} //end of sixth if
-								else //sixth else
-								{
-									if( text[ counter ] == 'J' || text[ counter ] == 'X') //checks for the letters J or X and adds 8 to variable 'value' if found (seventh if)
-									{
-										value += 8; //adds 8 to variable 'value'
-										counter++; //moves onto next letter if the one matching the above parameters is found
-									} //end of seventh if
-									else //seventh if
-									{
-										if ( text[ counter ] == 'Q' || text[ counter ] == 'Z') //checks for the letters Q or Z and adds 10 to variable 'value' if found (eighth if)
-										{
-											value += 10; //adds 10 to variable 'value'
-											counter++; //moves onto next letter if the one matching the above parameters is found
-										} //end of eighth if
+		if( text[ counter ] == 'A' || text[ counter ] == 'E' || text[ counter ] == 'I' || text[ counter ] == 'L' || text[ counter ] == 'N' || text[ counter ] == 'O' || //(second if)
+		    text[ counter ] == 'R' || text[ counter ] == 'S' || text[ counter ] == 'T' || text[ counter ] == 'U') //checks for letters A,E,I,L,N,O,R,S,T,U and adds 1 to variable 'value' if they are found
+		{																									 //(second if)
+			value +=1 ; //adds 1 to variable 'value'
+			counter++; //moves onto next letter if one matching above parameters is found
+		} // end of second if
+		else //second else
+		{
+		if( text[ counter ] == 'D' || text[ counter ] == 'G') // checks for letters D or G, and adds 2 to variable 'value' if they are found (third if)
+		{
+			value += 2; //adds 2 to variable 'value'
+			counter ++; //moves onto next letter if one matching above parameters is found
+		} //end of third if
+		else //third else
+		{																												
+		if ( text[ counter ] == 'B' || text[ counter ] == 'C' || text[ counter ] == 'M' || text[ counter ] == 'P') //checks for letters B,C,M,P and adds 3 to variable 'value' if they are found
+		{																										  //(fourth if)
+			value += 3; //adds 3 to variable 'value'
+			counter++; //moves onto next letter if one matching above parameters is found
+		} //end of fourth if
+		else //fourth else
+		{
+		if ( text[ counter ] == 'F' || text[ counter ] == 'H' || text[ counter ] == 'V' || text[ counter ] == 'W' || text[ counter ] == 'Y') //checks for letters B,C,M,P and adds 4 to variable 'value' if they are found
+		{																																	//(fifth if)
+			value += 4;
+			counter++;
+		} //end of fifth if
+		else //fifth else
+		{
+		if ( text[ counter ] == 'K' ) //checks for the letter K and adds 5 to variable 'value' if found (sixth if)
+		{
+			value += 5; //adds 5 to variable 'value'
+			counter++; //moves onto next letter if the one matching the above parameters is found
+		} //end of sixth if
+		else //sixth else
+		{
+		if( text[ counter ] == 'J' || text[ counter ] == 'X') //checks for the letters J or X and adds 8 to variable 'value' if found (seventh if)
+		{
+		value += 8; //adds 8 to variable 'value'
+		counter++; //moves onto next letter if the one matching the above parameters is found
+		} //end of seventh if
+		else //seventh if
+		{
+		if ( text[ counter ] == 'Q' || text[ counter ] == 'Z') //checks for the letters Q or Z and adds 10 to variable 'value' if found (eighth if)
+		{
+		value += 10; //adds 10 to variable 'value'
+		counter++; //moves onto next letter if the one matching the above parameters is found
+		} //end of eighth if
 										
-									} //end of seventh else
+		} //end of seventh else
 									
-								} //end of sixth else
+		} //end of sixth else
 								
-							} //end of fifth else
+		} //end of fifth else
 							
-						} // end of fourth else
+		} // end of fourth else
 						
-					} //end of third else
+		} //end of third else
 					
-				} //end of second else	
+		} //end of second else	
 				
 		} //end of first else
 	
